@@ -1,11 +1,13 @@
 #!/usr/bin/python3
-import hidden_4 as h
+import hidden_4 as hid
+
 
 def discover():
-    name = dir(h)
+    name = dir(hid)
     for i in name:
         if i[:2] != '__':
             print("{:s}".format(i))
+
 
 if __name__ == "__main__":
 
