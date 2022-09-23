@@ -5,12 +5,12 @@ i = 0
 while (i < len(z)):
     if i == 0:
         if len(z) == 1:
-            print(len(z) - 1, "arguments.")
-        elif len(z) == 2:
-            print(len(z) - 1, "argument:")
-        else:
-            print(len(z) - 1, "arguments:")
+            print("{} argument.".format(len(z) - 1))
 
+        elif len(z) == 2:
+            print("{} argument:".format(len(z) - 1))
+        else:
+            print("{} arguments:" .format(len(z) - 1))
     else:
-        print(i, z[i])
+        print("{}: {}".format(i, z[i]))
     i += 1
