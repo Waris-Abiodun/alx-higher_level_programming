@@ -4,8 +4,7 @@ def multiple_returns(sentence):
     Args:
         sentence - the sentence to read
     Return:
-        len(sentence) - lenght of a sentence
-        sentence[0] - the frist letter of the sentence
+        (lenght, first_char)
     """
     if not sentence:
         return 0, None
