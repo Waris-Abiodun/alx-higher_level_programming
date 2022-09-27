@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def multiple_returns(sentence):
     """
     a function that return lenth of a sentence and its first character
