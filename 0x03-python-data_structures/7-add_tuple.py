@@ -1,10 +1,8 @@
 def add_tuple(tuple_a=(), tuple_b=()):
-    i = 0
-    b = ()
-    while(tuple_a):
-        if (tuple_b[i] != None):
-            b[i] = tuple_a[i] + tuple_b[i]
-        else:
-            b[i] = tuple_a[i] + 0
-        i += 1
-    return b
+    if len(tuple_a) != len(tuple_b):
+        if (len(tuple_b) == 1):
+            return (tuple_a[0] + tuple_b[0], tuple_a[1] + 0)
+        elif (len(tuple_b) == 0):
+            return (tuple_a[0] + 0, tuple_a[1] + 0)
+    else:
+        return (tuple_a[0] + tuple_b[0], tuple_a[1] + tuple_b[1])
