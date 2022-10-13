@@ -17,7 +17,18 @@ class Square:
     def area(self):
         """Method to get the area of size raise to power 2"""
         return(self.__size ** 2)
-    def size(self, value):
-        self.__size = value
+
+    @property
     def size(self):
-        return self.__size
+        """Getter for private size value"""
+        return(self.__size)
+
+    @size.setter
+    def size(self, value):
+        """setter for private size value"""
+        if(type(value) is not int):
+            raise(TypeError("size must be an integer"))
+        elif(value < 0):
+            raise(ValueError("size must be >= 0"))
+        else:
+            self.__size = value
