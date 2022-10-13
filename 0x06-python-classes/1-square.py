@@ -5,6 +5,6 @@
 class Square:
     """Square is an empty class with  square size"""
     
-    def __init__ size(self, square_size):
+    def __init__ size(self, size):
         """an empty constructor called size"""
-        self.square_size =  square_size
+        self.size = size
