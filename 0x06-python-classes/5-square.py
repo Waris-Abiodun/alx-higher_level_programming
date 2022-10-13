@@ -35,8 +35,8 @@ class Square:
 
     def my_print(self):
         """A function that print a square using # on the lengtj of size"""
-        for i range(self.size):
-            for j range(self.size):
+        for i in range(self.size):
+            for j in range(self.size):
                 print("#", end="")
             print("#", end="")
         print()
