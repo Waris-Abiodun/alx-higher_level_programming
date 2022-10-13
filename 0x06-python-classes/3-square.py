@@ -16,4 +16,4 @@ class Square:
 
     def area(self):
         """Method to get the area of size raise to power 2"""
-        return(self.size ** 2)
+        return(self.__size ** 2)
