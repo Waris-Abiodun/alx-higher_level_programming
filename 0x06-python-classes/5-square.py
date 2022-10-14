@@ -35,11 +35,8 @@ class Square:
 
     def my_print(self):
         """A function that print a square using # on the lengtj of size"""i
-        if (self.size == 0):
+        if (self.__size == 0):
             print()
         else:
-            for i in range(self.size):
-                for j in range(self.size):
-                    print("#", end="")
-                print("#", end="")
-            print()
+            for i in range(self.__size):
+                print("#" * self.__size)
