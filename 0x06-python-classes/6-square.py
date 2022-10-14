@@ -29,6 +29,7 @@ class Square:
             for rows in range(self.__size):
                 print(" " * self.position[0], end='')
                 print("#" * self.__size)
+
     @property
     def size(self):
         """Getter of the private attribute size"""
