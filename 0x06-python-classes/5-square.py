@@ -34,7 +34,7 @@ class Square:
             self.__size = value
 
     def my_print(self):
-        """A function that print a square using # on the lengtj of size"""i
+        """A function that print a square using # on the lengtj of size"""
         if (self.__size == 0):
             print()
         else:
