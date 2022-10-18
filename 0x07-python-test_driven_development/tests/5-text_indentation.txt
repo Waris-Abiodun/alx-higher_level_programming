@@ -1,0 +1,23 @@
+=====================
+=== 3-say_my_name ===
+=====================
+
+imports say_my_name function
+----------------------------
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+checks with two strings
+-----------------------
+	>>> say_my_name("Kazeem", "Tomiwa")
+	My name is Kazeem Tomiwa
+
+	>>> say_my_name("Waris", "Abiodun")
+	My name is Waris Abiodun
+
+	>>> say_my_name("Waris")
+	My name is Waris
+
+	>>> say_my_name(12, "White")
+	Traceback (most recent call last):
+		...
+	TypeError: first_name must be a string

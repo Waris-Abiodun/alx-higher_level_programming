@@ -1,0 +1,56 @@
+The ``2-matrix_divided.py`` module
+======================
+
+Using ``matrix_divided``
+-------------------
+
+Importing the function from the module:
+	>>> matrix_divided = __import__("2-matrix_divided").matrix_divided
+
+Checking for module docstring:
+	 >>> m = __import__("2-matrix_divided").__doc__
+	 >>> len(m) > 1
+	 True
+
+checks with matrix variable and a number:
+	>>> matrix = [[1, 2, 3],[4, 5, 6]]
+	>>> matrix_divided(matrix ,3)
+	[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+checks with matrix list and number:
+	>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 3)
+	[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+checks with only list and not list of list]:
+	>>> matrix = [1, 2, 3]
+	>>> matrix_divided(matrix ,3)
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/float
+
+checks with list of list of wrong data type:
+	>>> matrix = [[1,r, 4], [a, 3, 6]]
+	>>> matrix_divided(matrix, 3)
+	Traceback (most recent call last): 
+	TypeError: matrix must be a matrix (list of lists) of integers/float 
+checks with string and a number:
+	>>> matrix_divided("checking", 9)
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+checks with list of list but different size:
+	>>> matrix = [[1, 2, 3], [1, 2]]
+	>>> matrix_divided(matrix, 9)
+	Traceback (most recent call last):
+	TypeError: Each row of the matrix must have the same size
+
+checks with matrix variable and a value that is not number:
+	>>> matrix = [[1, 2, 3],[4, 5, 6]]
+	>>> matrix_divided(matrix ,kj)
+	Traceback (most recent call last):
+	TypeError: div must be a number
+
+checks with matrix variable and 0:
+	>>> matrix = [[1, 2, 3],[4, 5, 6]]
+	>>> matrix_divided(matrix ,0)
+	Traceback (most recent call last):
+	ZeroDivisionError: division by zero
