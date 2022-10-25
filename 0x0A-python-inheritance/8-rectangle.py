@@ -15,8 +15,8 @@ class Rectangle(BaseGeometry):
         """
         check for width and height and allocate value for them
         """
-         self.integer_validator("width", width)
-         self.integer_validator("height", height)
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
 
-         self.__width = width
-         self.__height = height
+        self.__width = width
+        self.__height = height
