@@ -8,6 +8,7 @@ class BaseGeometry:
     """
     an classs that has many
     """
+
     def area(self):
         """
         a function that raises an error that its not implemented
