@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-import json
 """
 a function that return JSON represent of data
 """
